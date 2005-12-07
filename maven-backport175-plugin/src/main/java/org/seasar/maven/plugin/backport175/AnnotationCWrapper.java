@@ -20,6 +20,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Iterator;
 
+import org.apache.maven.plugin.logging.Log;
 import org.apache.tools.ant.ComponentHelper;
 import org.apache.tools.ant.Project;
 import org.apache.tools.ant.types.Path;
@@ -29,6 +30,8 @@ import org.codehaus.backport175.compiler.task.AnnotationCTask;
  * @author manhole
  */
 public class AnnotationCWrapper {
+
+    private Log _log;
 
     private Project createProject() {
         Project project = new Project();
@@ -60,6 +63,10 @@ public class AnnotationCWrapper {
         for (Iterator it = parameter.getSourcepath().iterator(); it.hasNext();) {
             String path = (String) it.next();
             sourcepath.setPath(path);
+            if (!new File(path).exists()) {
+                _log.info("source directory does not found: " + path);
+                return;
+            }
         }
 
         if (!destdir.exists()) {
@@ -77,6 +84,10 @@ public class AnnotationCWrapper {
         }
 
         task.execute();
+    }
+
+    public void setLog(Log log) {
+        _log = log;
     }
 
 }

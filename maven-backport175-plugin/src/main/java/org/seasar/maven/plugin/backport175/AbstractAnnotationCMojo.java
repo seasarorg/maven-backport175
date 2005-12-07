@@ -83,6 +83,7 @@ public abstract class AbstractAnnotationCMojo extends AbstractMojo implements
 
     public void execute() throws MojoExecutionException {
         AnnotationCWrapper compiler = new AnnotationCWrapper();
+        compiler.setLog(getLog());
         try {
             compiler.compile(this);
         } catch (IOException e) {
