@@ -7,7 +7,7 @@
   <groupId>org.seasar.maven.plugin.backport175</groupId>
   <artifactId>maven-backport175-plugin</artifactId>
   <packaging>maven-plugin</packaging>
-  <version>0.2</version>
+  <version>0.3.0</version>
   <name>Maven Backport175 Plugin</name>
   <url></url>
   <inceptionYear>2005</inceptionYear>
