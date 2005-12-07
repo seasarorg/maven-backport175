@@ -56,17 +56,21 @@ public class AnnotationCWrapper {
         classpath.setPath(destdir.getCanonicalPath());
         for (Iterator it = parameter.getClasspath().iterator(); it.hasNext();) {
             String path = (String) it.next();
+            if (!new File(path).exists()) {
+                _log.info("classpath does not exist: " + path);
+                continue;
+            }
             classpath.setPath(path);
         }
 
         Path sourcepath = task.createSourcepath();
         for (Iterator it = parameter.getSourcepath().iterator(); it.hasNext();) {
             String path = (String) it.next();
-            sourcepath.setPath(path);
             if (!new File(path).exists()) {
-                _log.info("source directory does not found: " + path);
+                _log.info("source directory does not exist: " + path);
                 return;
             }
+            sourcepath.setPath(path);
         }
 
         if (!destdir.exists()) {
