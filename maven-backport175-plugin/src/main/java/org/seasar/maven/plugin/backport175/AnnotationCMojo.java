@@ -20,6 +20,8 @@ import java.io.File;
 import java.util.List;
 
 /**
+ * Compile backport175 annotations.
+ * 
  * @author manhole
  * 
  * @goal annotationc
@@ -33,7 +35,7 @@ public class AnnotationCMojo extends AbstractAnnotationCMojo {
      * @required
      * @readonly
      */
-    private List _compileSourceRoots;
+    private List compileSourceRoots;
 
     /**
      * Project classpath.
@@ -42,25 +44,25 @@ public class AnnotationCMojo extends AbstractAnnotationCMojo {
      * @required
      * @readonly
      */
-    private List _compileClasspathElements;
+    private List compileClasspathElements;
 
     /**
      * @parameter expression="${project.build.outputDirectory}"
      * @required
      * @readonly
      */
-    private File _outputDirectory;
+    private File outputDirectory;
 
     public List getSourcepath() {
-        return _compileSourceRoots;
+        return compileSourceRoots;
     }
 
     public List getClasspath() {
-        return _compileClasspathElements;
+        return compileClasspathElements;
     }
 
     public File getDestdir() {
-        return _outputDirectory;
+        return outputDirectory;
     }
 
 }

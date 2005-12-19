@@ -1,0 +1,53 @@
+ ----
+Usage
+ ----
+HONMA Hirotaka
+ -----
+19 December 2005
+ -----
+
+Usage
+
+  Configure your <<<pom.xml>>> like below.
+
+------
+<project>
+  
+  <build>
+    
+    <plugins>
+      
+      <plugin>
+        <groupId>org.seasar.maven.plugin.backport175</groupId>
+        <artifactId>maven-backport175-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>annotationc</goal>
+              <goal>testAnnotationc</goal>
+            </goals>
+            <configuration>
+              <!--
+              <verbose>true</verbose>
+              -->
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      
+    </plugins>
+    
+  </build>
+  
+  <pluginRepositories>
+    
+    <pluginRepository>
+      <id>maven.seasar.org</id>
+      <name>The Seasar Foundation Maven2 Repository</name>
+      <url>http://maven.seasar.org/maven2</url>
+    </pluginRepository>
+    
+  </pluginRepositories>
+  
+</project>
+------

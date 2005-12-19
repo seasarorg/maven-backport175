@@ -22,6 +22,8 @@ import java.util.List;
 import org.apache.maven.plugin.MojoExecutionException;
 
 /**
+ * Compile backport175 annotations. (test-source)
+ * 
  * @author manhole
  * 
  * @goal testAnnotationc
@@ -35,7 +37,7 @@ public class TestAnnotationCMojo extends AbstractAnnotationCMojo {
      * @required
      * @readonly
      */
-    private List _testCompileSourceRoots;
+    private List testCompileSourceRoots;
 
     /**
      * Project test classpath.
@@ -44,22 +46,22 @@ public class TestAnnotationCMojo extends AbstractAnnotationCMojo {
      * @required
      * @readonly
      */
-    private List _testClasspathElements;
+    private List testClasspathElements;
 
     /**
      * @parameter expression="${project.build.testOutputDirectory}"
      * @required
      * @readonly
      */
-    private File _testOutputDirectory;
+    private File testOutputDirectory;
 
     /**
      * @parameter expression="${maven.test.skip}"
      */
-    private boolean _testSkip;
+    private boolean testSkip;
 
     public void execute() throws MojoExecutionException {
-        if (_testSkip) {
+        if (testSkip) {
             getLog().info("Not backport175 compiling test sources");
             return;
         }
@@ -67,15 +69,15 @@ public class TestAnnotationCMojo extends AbstractAnnotationCMojo {
     }
 
     public List getSourcepath() {
-        return _testCompileSourceRoots;
+        return testCompileSourceRoots;
     }
 
     public List getClasspath() {
-        return _testClasspathElements;
+        return testClasspathElements;
     }
 
     public File getDestdir() {
-        return _testOutputDirectory;
+        return testOutputDirectory;
     }
 
 }

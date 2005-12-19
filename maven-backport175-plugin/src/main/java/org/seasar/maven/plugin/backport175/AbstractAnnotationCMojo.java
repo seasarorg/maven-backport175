@@ -32,53 +32,53 @@ public abstract class AbstractAnnotationCMojo extends AbstractMojo implements
     /**
      * @parameter property="verbose"
      */
-    private boolean _verbose;
+    private boolean verbose;
 
     /**
      * @parameter property="ignoreUnknown"
      */
-    private boolean _ignoreUnknown;
+    private boolean ignoreUnknown;
 
     /**
      * @parameter property="properties"
      */
-    private List _properties = Collections.EMPTY_LIST;
+    private List properties = Collections.EMPTY_LIST;
 
     /**
      * @parameter property="copytodest"
      */
-    private String _copytodest;
+    private String copytodest;
 
     public String getCopytodest() {
-        return _copytodest;
+        return copytodest;
     }
 
     public void setCopytodest(String copytodest) {
-        _copytodest = copytodest;
+        this.copytodest = copytodest;
     }
 
     public boolean isIgnoreUnknown() {
-        return _ignoreUnknown;
+        return ignoreUnknown;
     }
 
     public void setIgnoreUnknown(boolean ignoreUnknown) {
-        _ignoreUnknown = ignoreUnknown;
+        this.ignoreUnknown = ignoreUnknown;
     }
 
     public List getProperties() {
-        return _properties;
+        return properties;
     }
 
     public void setProperties(List properties) {
-        _properties = properties;
+        this.properties = properties;
     }
 
     public boolean isVerbose() {
-        return _verbose;
+        return verbose;
     }
 
     public void setVerbose(boolean verbose) {
-        _verbose = verbose;
+        this.verbose = verbose;
     }
 
     public void execute() throws MojoExecutionException {

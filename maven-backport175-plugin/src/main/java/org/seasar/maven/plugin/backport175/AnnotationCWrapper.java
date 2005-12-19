@@ -31,7 +31,7 @@ import org.codehaus.backport175.compiler.task.AnnotationCTask;
  */
 public class AnnotationCWrapper {
 
-    private Log _log;
+    private Log log;
 
     private Project createProject() {
         Project project = new Project();
@@ -57,7 +57,7 @@ public class AnnotationCWrapper {
         for (Iterator it = parameter.getClasspath().iterator(); it.hasNext();) {
             String path = (String) it.next();
             if (!new File(path).exists()) {
-                _log.info("classpath does not exist: " + path);
+                getLog().info("classpath does not exist: " + path);
                 continue;
             }
             classpath.setPath(path);
@@ -67,7 +67,7 @@ public class AnnotationCWrapper {
         for (Iterator it = parameter.getSourcepath().iterator(); it.hasNext();) {
             String path = (String) it.next();
             if (!new File(path).exists()) {
-                _log.info("source directory does not exist: " + path);
+                getLog().info("source directory does not exist: " + path);
                 return;
             }
             sourcepath.setPath(path);
@@ -90,8 +90,12 @@ public class AnnotationCWrapper {
         task.execute();
     }
 
+    public Log getLog() {
+        return log;
+    }
+
     public void setLog(Log log) {
-        _log = log;
+        this.log = log;
     }
 
 }
