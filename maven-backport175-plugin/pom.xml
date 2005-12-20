@@ -9,6 +9,7 @@
   <packaging>maven-plugin</packaging>
   <name>Maven Backport175 Plugin</name>
   <version>0.3.1</version>
+  <description>backport175 annotations compiler</description>
   <url>http://maven-backport175.sandbox.seasar.org/</url>
   <inceptionYear>2005</inceptionYear>
   <developers>
@@ -16,7 +17,12 @@
       <id>manhole</id>
       <name>HONMA Hirotaka</name>
       <email>manholex@gmail.com</email>
+      <url></url>
+      <organization></organization>
+      <organizationUrl></organizationUrl>
+      <roles></roles>
       <timezone>+9</timezone>
+      <properties></properties>
     </developer>
   </developers>
   <licenses>
@@ -26,6 +32,17 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+  <scm>
+    <connection>
+    	scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/trunk/maven-backport175-plugin/
+    </connection>
+    <developerConnection>
+    	scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/trunk/maven-backport175-plugin/
+    </developerConnection>
+    <url>
+    	http://www.seasar.org/websvn/listing.php?repname=sandbox.maven-backport175
+    </url>
+  </scm>
   <organization>
     <name>The Seasar Foundation</name>
     <url>http://www.seasar.org/</url>

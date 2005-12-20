@@ -9,14 +9,17 @@ HONMA Hirotaka
 Usage
 
   Configure your <<<pom.xml>>> like below.
+  
+  And you can automatically compile backport175 annotations
+  when compile source code by Maven 2.
 
 ------
 <project>
-  
+  ...
   <build>
-    
+    ...
     <plugins>
-      
+      ...
       <plugin>
         <groupId>org.seasar.maven.plugin.backport175</groupId>
         <artifactId>maven-backport175-plugin</artifactId>
@@ -34,20 +37,20 @@ Usage
           </execution>
         </executions>
       </plugin>
-      
+      ...
     </plugins>
-    
+    ...
   </build>
-  
+  ...
   <pluginRepositories>
-    
+    ...
     <pluginRepository>
       <id>maven.seasar.org</id>
       <name>The Seasar Foundation Maven2 Repository</name>
       <url>http://maven.seasar.org/maven2</url>
     </pluginRepository>
-    
+    ...
   </pluginRepositories>
-  
+  ...
 </project>
 ------
