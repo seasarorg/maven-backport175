@@ -29,7 +29,7 @@
       </div>
     </div>
     <div id="breadcrumbs">
-      <div class="xleft">Last Published: Tue Dec 20 02:41:33 JST 2005</div>
+      <div class="xleft">Last Published: Tue Dec 20 11:41:11 JST 2005</div>
       <div class="xright">      <a href="http://backport175.codehaus.org/">backport175</a>
           |
           <a href="http://maven.apache.org/maven2/">Maven 2</a>
@@ -92,12 +92,12 @@
     </div></div>
     <div id="bodyColumn">
       <div id="contentBox">
-        <div class="section"><h2>Usage</h2><p>Configure your <tt>pom.xml</tt> like below.</p><div class="source"><pre>&lt;project&gt;
-  
+        <div class="section"><h2>Usage</h2><p>Configure your <tt>pom.xml</tt> like below.</p><p>And you can automatically compile backport175 annotations when compile source code by Maven 2.</p><div class="source"><pre>&lt;project&gt;
+  ...
   &lt;build&gt;
-    
+    ...
     &lt;plugins&gt;
-      
+      ...
       &lt;plugin&gt;
         &lt;groupId&gt;org.seasar.maven.plugin.backport175&lt;/groupId&gt;
         &lt;artifactId&gt;maven-backport175-plugin&lt;/artifactId&gt;
@@ -115,21 +115,21 @@
           &lt;/execution&gt;
         &lt;/executions&gt;
       &lt;/plugin&gt;
-      
+      ...
     &lt;/plugins&gt;
-    
+    ...
   &lt;/build&gt;
-  
+  ...
   &lt;pluginRepositories&gt;
-    
+    ...
     &lt;pluginRepository&gt;
       &lt;id&gt;maven.seasar.org&lt;/id&gt;
       &lt;name&gt;The Seasar Foundation Maven2 Repository&lt;/name&gt;
       &lt;url&gt;http://maven.seasar.org/maven2&lt;/url&gt;
     &lt;/pluginRepository&gt;
-    
+    ...
   &lt;/pluginRepositories&gt;
-  
+  ...
 &lt;/project&gt;</pre></div></div>
       </div>
     </div>
