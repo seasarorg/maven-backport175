@@ -31,6 +31,8 @@ import java.util.List;
 public class AnnotationCMojo extends AbstractAnnotationCMojo {
 
     /**
+     * The source directories containing the sources to be compiled.
+     * 
      * @parameter expression="${project.compileSourceRoots}"
      * @required
      * @readonly
@@ -47,6 +49,8 @@ public class AnnotationCMojo extends AbstractAnnotationCMojo {
     private List compileClasspathElements;
 
     /**
+     * The directory for compiled classes.
+     * 
      * @parameter expression="${project.build.outputDirectory}"
      * @required
      * @readonly

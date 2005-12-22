@@ -33,6 +33,8 @@ import org.apache.maven.plugin.MojoExecutionException;
 public class TestAnnotationCMojo extends AbstractAnnotationCMojo {
 
     /**
+     * The source directories containing the test-source to be compiled.
+     * 
      * @parameter expression="${project.testCompileSourceRoots}"
      * @required
      * @readonly
@@ -49,6 +51,8 @@ public class TestAnnotationCMojo extends AbstractAnnotationCMojo {
     private List testClasspathElements;
 
     /**
+     * The directory where compiled test classes go.
+     * 
      * @parameter expression="${project.build.testOutputDirectory}"
      * @required
      * @readonly
@@ -56,6 +60,9 @@ public class TestAnnotationCMojo extends AbstractAnnotationCMojo {
     private File testOutputDirectory;
 
     /**
+     * Set this to 'true' to bypass unit tests entirely.
+     * Its use is NOT RECOMMENDED, but quite convenient on occasion.
+     * 
      * @parameter expression="${maven.test.skip}"
      */
     private boolean testSkip;

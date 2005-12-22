@@ -48,7 +48,6 @@ public class AnnotationCWrapper {
         task.setProject(createProject());
         task.setVerbose(parameter.isVerbose());
         task.setIgnoreUnknown(parameter.isIgnoreUnknown());
-        task.setCopytodest(parameter.getCopytodest());
 
         File destdir = parameter.getDestdir();
 

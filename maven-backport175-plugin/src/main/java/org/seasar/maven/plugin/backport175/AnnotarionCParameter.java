@@ -30,8 +30,6 @@ public interface AnnotarionCParameter {
 
     public File getDestdir();
 
-    public String getCopytodest();
-
     public boolean isIgnoreUnknown();
 
     public List getProperties();

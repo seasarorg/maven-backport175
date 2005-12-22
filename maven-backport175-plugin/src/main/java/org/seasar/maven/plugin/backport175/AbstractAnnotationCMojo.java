@@ -30,32 +30,26 @@ public abstract class AbstractAnnotationCMojo extends AbstractMojo implements
     AnnotarionCParameter {
 
     /**
+     * flag marking the task verbosity.
+     * 
      * @parameter property="verbose"
      */
     private boolean verbose;
 
     /**
+     * flag marking if the task should ignore unknown annotations
+     * (like f.e. @author if not associated to an annotation interface)
+     * 
      * @parameter property="ignoreUnknown"
      */
     private boolean ignoreUnknown;
 
     /**
+     * path to a properties file when user-defined annoations are to be used.
+     * 
      * @parameter property="properties"
      */
     private List properties = Collections.EMPTY_LIST;
-
-    /**
-     * @parameter property="copytodest"
-     */
-    private String copytodest;
-
-    public String getCopytodest() {
-        return copytodest;
-    }
-
-    public void setCopytodest(String copytodest) {
-        this.copytodest = copytodest;
-    }
 
     public boolean isIgnoreUnknown() {
         return ignoreUnknown;
