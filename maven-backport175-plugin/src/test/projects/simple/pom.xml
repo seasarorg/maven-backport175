@@ -5,10 +5,23 @@
 >
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.seasar.maven.plugin.backport175.test</groupId>
-  <artifactId>ascii</artifactId>
+  <artifactId>simple</artifactId>
   <packaging>jar</packaging>
-  <name>ascii</name>
+  <name>simple</name>
   <version>0.1</version>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <encoding>UTF-8</encoding>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
