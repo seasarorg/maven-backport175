@@ -21,11 +21,14 @@
   <!--
   <bannerLeft>
     <name>Maven Backport175 Plugin</name>
-    <src>images/seasar.gif</src>
+    <src>images/seasar_logo_blue.gif</src>
     <href>http://maven-backport175.sandbox.seasar.org/</href>
   </bannerLeft>
   -->
   <bannerRight>
+    <!--
+    <src>images/seasar.gif</src>
+    -->
     <src>http://maven.apache.org/images/maven-small.gif</src>
   </bannerRight>
   <body>

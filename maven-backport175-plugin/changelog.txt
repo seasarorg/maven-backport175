@@ -1,22 +1,23 @@
 *0.3.2
 
--src/site���쐬�B
--mojo�̃t�B�[���h�ϐ�������v���t�B�N�X"_"���O�����B
- mvn site�ŏo�͂����v���O�C���h�L�������g�Ƀp�����[�^�����܂܂��̂����A
- ���̃p�����[�^����"_"���܂܂�Ă��܂����߁B
+-src/siteを作成。
+-mojoのフィールド変数名からプレフィクス"_"を外した。
+ mvn siteで出力したプラグインドキュメントにパラメータ名が含まれるのだが、
+ そのパラメータ名に"_"が含まれてしまうため。
+-Eclipseプロジェクトの設定を、UTF-8にした。
 
 *0.3.1
 
--Maven2����n�����classpath���X�g�̂����A���݂��Ȃ����̂͏��O����悤�ɂ����B
+-Maven2から渡されるclasspathリストのうち、存在しないものは除外するようにした。
 
 *0.3.0
 
--Maven2����n�����sourcepath�����݂��Ȃ��ꍇ�́A�������X�L�b�v����悤�ɂ����B
+-Maven2から渡されるsourcepathが存在しない場合は、処理をスキップするようにした。
 
 *0.2
 
--�p�b�P�[�W����"org.seasar.maven.plugin.backport175"�ɕύX�����B
+-パッケージ名を"org.seasar.maven.plugin.backport175"に変更した。
 
 *0.1
 
--���ŁB
+-初版。

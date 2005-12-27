@@ -1,6 +1,6 @@
 <projectDescription>
   <name>maven-backport175-plugin</name>
-  <comment/>
+  <comment>backport175 annotations compiler</comment>
   <projects/>
   <buildSpec>
     <buildCommand>
