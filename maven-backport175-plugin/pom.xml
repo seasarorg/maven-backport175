@@ -58,6 +58,14 @@
             <encoding>UTF-8</encoding>
           </configuration>
         </plugin>
+        <plugin>
+          <artifactId>maven-release-plugin</artifactId>
+          <configuration>
+            <tagBase>
+              https://www.seasar.org/svn/sandbox/maven-backport175/tags
+            </tagBase>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
