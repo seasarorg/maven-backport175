@@ -4,7 +4,7 @@
   <artifactId>maven-backport175-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <name>Maven Backport175 Plugin</name>
-  <version>0.3.2</version>
+  <version>0.3.3-SNAPSHOT</version>
   <description>backport175 annotations compiler</description>
   <url>http://maven-backport175.sandbox.seasar.org/</url>
   <inceptionYear>2005</inceptionYear>
@@ -27,8 +27,8 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/tags/maven-backport175-plugin-0.3.2/maven-backport175-plugin/</connection>
-    <developerConnection>scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/tags/maven-backport175-plugin-0.3.2/maven-backport175-plugin/</developerConnection>
+    <connection>scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/trunk/maven-backport175-plugin/</connection>
+    <developerConnection>scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/trunk/maven-backport175-plugin/</developerConnection>
     <url>http://www.seasar.org/websvn/listing.php?repname=sandbox.maven-backport175</url>
   </scm>
   <organization>
