@@ -1,14 +1,10 @@
-<project
-  xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
->
+<?xml version="1.0" encoding="UTF-8"?><project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.seasar.maven.plugin.backport175</groupId>
   <artifactId>maven-backport175-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <name>Maven Backport175 Plugin</name>
-  <version>0.3.2-SNAPSHOT</version>
+  <version>0.3.2</version>
   <description>backport175 annotations compiler</description>
   <url>http://maven-backport175.sandbox.seasar.org/</url>
   <inceptionYear>2005</inceptionYear>
@@ -20,9 +16,7 @@
       <url></url>
       <organization></organization>
       <organizationUrl></organizationUrl>
-      <roles></roles>
       <timezone>+9</timezone>
-      <properties></properties>
     </developer>
   </developers>
   <licenses>
@@ -33,15 +27,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>
-      scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/trunk/maven-backport175-plugin/
-    </connection>
-    <developerConnection>
-      scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/trunk/maven-backport175-plugin/
-    </developerConnection>
-    <url>
-      http://www.seasar.org/websvn/listing.php?repname=sandbox.maven-backport175
-    </url>
+    <connection>scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/tags/maven-backport175-plugin-0.3.2/maven-backport175-plugin/</connection>
+    <developerConnection>scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/tags/maven-backport175-plugin-0.3.2/maven-backport175-plugin/</developerConnection>
+    <url>http://www.seasar.org/websvn/listing.php?repname=sandbox.maven-backport175</url>
   </scm>
   <organization>
     <name>The Seasar Foundation</name>
@@ -52,7 +40,6 @@
     <pluginManagement>
       <plugins>
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <configuration>
             <encoding>UTF-8</encoding>
@@ -61,9 +48,7 @@
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
           <configuration>
-            <tagBase>
-              https://www.seasar.org/svn/sandbox/maven-backport175/tags
-            </tagBase>
+            <tagBase>https://www.seasar.org/svn/sandbox/maven-backport175/tags</tagBase>
           </configuration>
         </plugin>
       </plugins>
@@ -71,42 +56,36 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>backport175</groupId>
-      <artifactId>backport175</artifactId>
-      <version>1.0</version>
-      <type>jar</type>
-    </dependency>
-    <dependency>
-      <groupId>ant</groupId>
-      <artifactId>ant</artifactId>
-      <version>1.6.5</version>
-      <type>jar</type>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-plugin-api</artifactId>
       <version>2.0</version>
-      <type>jar</type>
     </dependency>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <type>jar</type>
-      <scope>test</scope>
+      <groupId>backport175</groupId>
+      <artifactId>backport175</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>ant</groupId>
+      <artifactId>ant</artifactId>
+      <version>1.6.5</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-embedder</artifactId>
       <version>2.0</version>
-      <type>jar</type>
       <scope>test</scope>
     </dependency>
   </dependencies>
   <reporting>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-plugin-plugin</artifactId>
       </plugin>
     </plugins>
