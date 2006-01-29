@@ -95,6 +95,9 @@
         </executions>
         <configuration>
           <charset>UTF-8</charset>
+          <docencoding>UTF-8</docencoding>
+          <encoding>UTF-8</encoding>
+          <locale>en</locale>
         </configuration>
       </plugin>
       <plugin>
@@ -145,6 +148,9 @@
       <plugin>
         <artifactId>maven-plugin-plugin</artifactId>
       </plugin>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+      </plugin>
       <!--
       <plugin>
         <artifactId>maven-clover-plugin</artifactId>
@@ -154,9 +160,6 @@
       </plugin>
       <plugin>
         <artifactId>maven-checkstyle-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <artifactId>maven-javadoc-plugin</artifactId>
       </plugin>
       -->
     </plugins>
