@@ -19,7 +19,6 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Arrays;
-import java.util.Locale;
 import java.util.Properties;
 
 import junit.framework.TestCase;
