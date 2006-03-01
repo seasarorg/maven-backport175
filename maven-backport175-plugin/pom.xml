@@ -158,6 +158,17 @@
       </plugin>
       <!--
       <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <locale>en</locale>
+          <docencoding>UTF-8</docencoding> <!- - unnecessary? - ->
+          <charset>UTF-8</charset> <!- - meta? - ->
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+      -->
+      <!--
+      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>jcoverage-maven-plugin</artifactId>
       </plugin>
@@ -175,9 +186,6 @@
       </plugin>
       -->
       <!--
-      <plugin>
-        <artifactId>maven-javadoc-plugin</artifactId>
-      </plugin>
       <plugin>
         <artifactId>maven-clover-plugin</artifactId>
       </plugin>
