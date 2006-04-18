@@ -6,6 +6,10 @@
 	<classpathentry output="src/test/projects/simple/target" kind="src" path="src/test/projects/simple/src/test/java"/>
 	<classpathentry output="src/test/projects/ascii-annotated/target" kind="src" path="src/test/projects/ascii-annotated/src/main/java"/>
 	<classpathentry output="src/test/projects/ascii-annotated/target" kind="src" path="src/test/projects/ascii-annotated/src/test/java"/>
+	<classpathentry output="src/test/projects/no-test/target" kind="src" path="src/test/projects/no-test/src/main/java"/>
+	<classpathentry output="src/test/projects/no-source/target" kind="src" path="src/test/projects/no-source/src/test/java"/>
+	<classpathentry output="src/test/projects/skip-test/target" kind="src" path="src/test/projects/skip-test/src/main/java"/>
+	<classpathentry output="src/test/projects/skip-test/target" kind="src" path="src/test/projects/skip-test/src/test/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry sourcepath="M2_REPO/junit/junit/3.8.1/junit-3.8.1-sources.jar" kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
 	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-model/2.0/maven-model-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-model/2.0/maven-model-2.0.jar"/>

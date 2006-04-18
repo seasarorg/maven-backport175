@@ -37,6 +37,9 @@ import org.apache.maven.project.MavenProject;
 import org.apache.maven.project.ProjectBuildingException;
 import org.codehaus.plexus.util.dag.CycleDetectedException;
 
+/**
+ * @author manhole
+ */
 public class AnnotationCompilerTest extends TestCase {
 
     private MavenEmbedder maven;
@@ -56,6 +59,18 @@ public class AnnotationCompilerTest extends TestCase {
 
     public void testSimple() throws Exception {
         __testProject("simple");
+    }
+
+    public void testNoTest() throws Exception {
+        __testProject("no-test");
+    }
+
+    public void testNoSource() throws Exception {
+        __testProject("no-source");
+    }
+
+    public void testSkipTest() throws Exception {
+        __testProject("skip-test");
     }
 
     public void testAsciiAnnotated() throws Exception {
@@ -83,7 +98,7 @@ public class AnnotationCompilerTest extends TestCase {
         // ## Assert ##
         File jarFile = getTestProjectFile(projectName + "/target/"
             + projectName + "-0.1.jar");
-        assertEquals("testが成功しjarが作成されていること", true, jarFile.exists());
+        assertEquals("testが成功しjarが作成されていること:" + jarFile, true, jarFile.exists());
         assertEquals("jarはこのtest内で作成されていること", true, start < jarFile
             .lastModified());
     }

@@ -68,7 +68,7 @@ public class TestAnnotationCMojo extends AbstractAnnotationCMojo {
 
     public void execute() throws MojoExecutionException {
         if (testSkip) {
-            getLog().info("Not backport175 compiling test sources");
+            getLog().info("Not backport175 compiling test sources.");
             return;
         }
         super.execute();
