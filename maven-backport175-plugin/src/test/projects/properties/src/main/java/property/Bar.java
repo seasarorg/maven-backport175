@@ -13,22 +13,19 @@
  * either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-package ascii;
+package property;
 
 /**
  * @author manhole
  * 
- * @ascii.SomeClassAnnotation(someValue="123abcDEF")
+ * @BBB1("bbbbb1")
  */
-public class AsciiAnnotated {
-
-    public void doSomethingA() {
-    }
+public class Bar {
 
     /**
-     * @ascii.SomeMethodAnnotation
+     * @BBB2("bbbbb2")
      */
-    public void doSomethingB() {
-    }
+    public void baaaar() {
+    };
 
 }

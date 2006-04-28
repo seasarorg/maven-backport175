@@ -77,6 +77,10 @@ public class AnnotationCompilerTest extends TestCase {
         __testProject("ascii-annotated");
     }
 
+    public void testProperties() throws Exception {
+        __testProject("properties");
+    }
+
     private void __testProject(final String projectName) throws IOException,
         ProjectBuildingException, ArtifactResolutionException,
         ArtifactNotFoundException, CycleDetectedException,

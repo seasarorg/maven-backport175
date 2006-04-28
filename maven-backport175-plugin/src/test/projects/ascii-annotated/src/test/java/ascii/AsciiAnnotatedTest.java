@@ -25,8 +25,8 @@ public class AsciiAnnotatedTest extends TestCase {
         SomeClassAnnotation ann = (SomeClassAnnotation) Annotations
             .getAnnotation(SomeClassAnnotation.class, AsciiAnnotated.class);
         System.out.println(ann);
-        assertNotNull("アノテーションを取得できること", ann);
-        assertEquals("アノテーション値[123abcDEF]を取得できること", "123abcDEF", ann
+        assertNotNull("get annotation", ann);
+        assertEquals("get annotated value [123abcDEF]", "123abcDEF", ann
             .someValue());
     }
 
@@ -35,9 +35,9 @@ public class AsciiAnnotatedTest extends TestCase {
             .getAnnotation(SomeMethodAnnotation.class, AsciiAnnotated.class
                 .getMethod("doSomethingB", null));
         System.out.println(ann);
-        assertNotNull("アノテーションを取得できること", ann);
-        assertEquals("アノテーション値[null]を取得できること", null, ann.someValueA());
-        assertEquals("アノテーション値[foo]を取得できること", "foo", ann.someValueB());
+        assertNotNull("get annotation", ann);
+        assertEquals("get annotated value [null]", null, ann.someValueA());
+        assertEquals("get annotated value [foo]", "foo", ann.someValueB());
     }
 
     public void testMethodAnnotationNotExist() throws Exception {
@@ -45,7 +45,7 @@ public class AsciiAnnotatedTest extends TestCase {
             .getAnnotation(SomeMethodAnnotation.class, AsciiAnnotated.class
                 .getMethod("doSomethingA", null));
         System.out.println(ann);
-        assertNull("アノテーションは存在しないこと", ann);
+        assertEquals(null, ann);
     }
 
 }

@@ -13,22 +13,19 @@
  * either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-package ascii;
+package property;
 
-/**
- * @author manhole
- * 
- * @ascii.SomeClassAnnotation(someValue="123abcDEF")
- */
-public class AsciiAnnotated {
+import junit.framework.TestCase;
 
-    public void doSomethingA() {
-    }
+import org.codehaus.backport175.reader.Annotations;
 
-    /**
-     * @ascii.SomeMethodAnnotation
-     */
-    public void doSomethingB() {
+public class FooTest extends TestCase {
+
+    public void test1() throws Exception {
+        AaaAnnotation ann = (AaaAnnotation) Annotations.getAnnotation(
+            AaaAnnotation.class, Foo.class);
+        System.out.println(ann);
+        assertEquals("get annotated value", "aaaaa", ann.value());
     }
 
 }

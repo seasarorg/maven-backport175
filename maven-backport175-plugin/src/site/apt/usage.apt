@@ -33,6 +33,15 @@ Usage
               <!--
               <verbose>true</verbose>
               -->
+              <!--
+              <ignoreUnknown>true</ignoreUnknown>
+              -->
+              <!--
+              <properties>
+                <property>aaa.properties</property>
+                <property>bbb.properties</property>
+              </properties>
+              -->
             </configuration>
           </execution>
         </executions>
