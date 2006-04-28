@@ -38,8 +38,8 @@ Usage
               -->
               <!--
               <properties>
-                <property>aaa.properties</property>
-                <property>bbb.properties</property>
+                <property>${basedir}/aaa.properties</property>
+                <property>${basedir}/bbb.properties</property>
               </properties>
               -->
             </configuration>

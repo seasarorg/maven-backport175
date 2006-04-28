@@ -5,7 +5,7 @@
 >
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.seasar.maven.plugin.backport175.test</groupId>
-  <artifactId>property</artifactId>
+  <artifactId>properties</artifactId>
   <packaging>jar</packaging>
   <name>property</name>
   <version>0.1</version>
@@ -36,8 +36,8 @@
         </executions>
         <configuration>
           <properties>
-            <property>aaa.properties</property>
-            <property>bbb.properties</property>
+            <property>${basedir}/aaa.properties</property>
+            <property>${basedir}/bbb.properties</property>
           </properties>
         </configuration>
       </plugin>
