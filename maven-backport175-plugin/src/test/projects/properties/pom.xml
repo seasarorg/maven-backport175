@@ -36,8 +36,8 @@
         </executions>
         <configuration>
           <properties>
-            <property>${basedir}/aaa.properties</property>
-            <property>${basedir}/bbb.properties</property>
+            <property>${basedir}/src/main/config/aaa.properties</property>
+            <property>${basedir}/src/main/config/bbb.properties</property>
           </properties>
         </configuration>
       </plugin>
