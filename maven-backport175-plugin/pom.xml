@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project>
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.seasar.maven.plugin.backport175</groupId>
   <artifactId>maven-backport175-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <name>Maven Backport175 Plugin</name>
-  <version>0.3.4-SNAPSHOT</version>
+  <version>0.3.3</version>
   <description>backport175 annotations compiler</description>
-  <url>http://maven-backport175.sandbox.seasar.org</url>
+  <url>http://maven-backport175.sandbox.seasar.org/</url>
   <inceptionYear>2005</inceptionYear>
   <developers>
     <developer>
@@ -27,8 +28,8 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/tags/maven-backport175-plugin-0.3.3/maven-backport175-plugin</connection>
-    <developerConnection>scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/tags/maven-backport175-plugin-0.3.3/maven-backport175-plugin</developerConnection>
+    <connection>scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/trunk/maven-backport175-plugin/</connection>
+    <developerConnection>scm:svn:https://www.seasar.org/svn/sandbox/maven-backport175/trunk/maven-backport175-plugin/</developerConnection>
     <url>http://www.seasar.org/websvn/listing.php?repname=sandbox.maven-backport175</url>
   </scm>
   <organization>
@@ -54,6 +55,9 @@
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
           <configuration>
+            <!--
+            <locales>en_US</locales>
+            -->
             <outputEncoding>UTF-8</outputEncoding>
           </configuration>
         </plugin>
@@ -89,6 +93,26 @@
           </execution>
         </executions>
       </plugin>
+      <!-- 
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>javadoc-jar</id>
+            <phase>package</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <charset>UTF-8</charset>
+          <docencoding>UTF-8</docencoding>
+          <encoding>UTF-8</encoding>
+          <locale>en</locale>
+        </configuration>
+      </plugin>
+      -->
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
         <executions>
@@ -105,12 +129,14 @@
   </build>
   <pluginRepositories>
     <pluginRepository>
+      <id>Maven Snapshots</id>
+      <url>http://snapshots.maven.codehaus.org/maven2/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
       <releases>
         <enabled>false</enabled>
       </releases>
-      <snapshots />
-      <id>Maven Snapshots</id>
-      <url>http://snapshots.maven.codehaus.org/maven2/</url>
     </pluginRepository>
   </pluginRepositories>
   <dependencies>
@@ -149,17 +175,52 @@
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
+        <artifactId>surefire-report-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
         <artifactId>changelog-maven-plugin</artifactId>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>cobertura-maven-plugin</artifactId>
         <version>2.0-SNAPSHOT</version>
+        <!--
+        <version>2.0-20060130.214008-3</version>
+        <configuration>
+          <outputDirectory>${project.build.directory}/site/cobertura</outputDirectory>
+        </configuration>
+        -->
+      </plugin>
+      <!--
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <locale>en</locale>
+          <docencoding>UTF-8</docencoding> <!- - unnecessary? - ->
+          <charset>UTF-8</charset> <!- - meta? - ->
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+      -->
+      <!--
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>maven-jdepend-plugin</artifactId>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
-        <artifactId>surefire-report-maven-plugin</artifactId>
+        <artifactId>jdepend-maven-plugin</artifactId>
       </plugin>
+      -->
+      <!--
+      <plugin>
+        <artifactId>maven-pmd-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+      </plugin>
+      -->
     </plugins>
   </reporting>
   <distributionManagement>
