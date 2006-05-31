@@ -33,6 +33,7 @@ import org.apache.maven.embedder.PlexusLoggerAdapter;
 import org.apache.maven.lifecycle.LifecycleExecutionException;
 import org.apache.maven.monitor.event.DefaultEventMonitor;
 import org.apache.maven.monitor.event.EventMonitor;
+import org.apache.maven.project.DuplicateProjectException;
 import org.apache.maven.project.MavenProject;
 import org.apache.maven.project.ProjectBuildingException;
 import org.codehaus.plexus.util.dag.CycleDetectedException;
@@ -84,7 +85,7 @@ public class AnnotationCompilerTest extends TestCase {
     private void __testProject(final String projectName) throws IOException,
         ProjectBuildingException, ArtifactResolutionException,
         ArtifactNotFoundException, CycleDetectedException,
-        LifecycleExecutionException, BuildFailureException {
+        LifecycleExecutionException, BuildFailureException, DuplicateProjectException {
 
         // ## Arrange ##
         // ## Act ##

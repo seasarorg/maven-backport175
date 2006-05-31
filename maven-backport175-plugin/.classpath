@@ -1,47 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src/main/java"/>
-	<classpathentry output="target/test-classes" kind="src" path="src/test/java"/>
-	<classpathentry output="src/test/projects/simple/target" kind="src" path="src/test/projects/simple/src/main/java"/>
-	<classpathentry output="src/test/projects/simple/target" kind="src" path="src/test/projects/simple/src/test/java"/>
-	<classpathentry output="src/test/projects/ascii-annotated/target" kind="src" path="src/test/projects/ascii-annotated/src/main/java"/>
-	<classpathentry output="src/test/projects/ascii-annotated/target" kind="src" path="src/test/projects/ascii-annotated/src/test/java"/>
-	<classpathentry output="src/test/projects/no-test/target" kind="src" path="src/test/projects/no-test/src/main/java"/>
-	<classpathentry output="src/test/projects/no-source/target" kind="src" path="src/test/projects/no-source/src/test/java"/>
-	<classpathentry output="src/test/projects/skip-test/target" kind="src" path="src/test/projects/skip-test/src/main/java"/>
-	<classpathentry output="src/test/projects/skip-test/target" kind="src" path="src/test/projects/skip-test/src/test/java"/>
-	<classpathentry output="src/test/projects/properties/target" kind="src" path="src/test/projects/properties/src/main/java"/>
-	<classpathentry output="src/test/projects/properties/target" kind="src" path="src/test/projects/properties/src/test/java"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry sourcepath="M2_REPO/junit/junit/3.8.1/junit-3.8.1-sources.jar" kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-model/2.0/maven-model-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-model/2.0/maven-model-2.0.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-plugin-parameter-documenter/2.0/maven-plugin-parameter-documenter-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-plugin-parameter-documenter/2.0/maven-plugin-parameter-documenter-2.0.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8-sources.jar" kind="var" path="M2_REPO/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-profile/2.0/maven-profile-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-profile/2.0/maven-profile-2.0.jar"/>
-	<classpathentry kind="var" path="M2_REPO/ant/ant/1.6.5/ant-1.6.5.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-error-diagnostics/2.0/maven-error-diagnostics-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-error-diagnostics/2.0/maven-error-diagnostics-2.0.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4-sources.jar" kind="var" path="M2_REPO/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/wagon/wagon-http-lightweight/1.0-alpha-5/wagon-http-lightweight-1.0-alpha-5-sources.jar" kind="var" path="M2_REPO/org/apache/maven/wagon/wagon-http-lightweight/1.0-alpha-5/wagon-http-lightweight-1.0-alpha-5.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-plugin-descriptor/2.0/maven-plugin-descriptor-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-plugin-descriptor/2.0/maven-plugin-descriptor-2.0.jar"/>
-	<classpathentry kind="var" path="M2_REPO/commons-cli/commons-cli/1.0/commons-cli-1.0.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/wagon/wagon-ssh/1.0-alpha-5/wagon-ssh-1.0-alpha-5-sources.jar" kind="var" path="M2_REPO/org/apache/maven/wagon/wagon-ssh/1.0-alpha-5/wagon-ssh-1.0-alpha-5.jar"/>
-	<classpathentry kind="var" path="M2_REPO/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar"/>
-	<classpathentry kind="var" path="M2_REPO/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-embedder/2.0/maven-embedder-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-embedder/2.0/maven-embedder-2.0.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-monitor/2.0/maven-monitor-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-monitor/2.0/maven-monitor-2.0.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-settings/2.0/maven-settings-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-settings/2.0/maven-settings-2.0.jar"/>
-	<classpathentry kind="var" path="M2_REPO/com/jcraft/jsch/0.1.23/jsch-0.1.23.jar"/>
-	<classpathentry kind="var" path="M2_REPO/backport175/backport175/1.0/backport175-1.0.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/wagon/wagon-file/1.0-alpha-5/wagon-file-1.0-alpha-5-sources.jar" kind="var" path="M2_REPO/org/apache/maven/wagon/wagon-file/1.0-alpha-5/wagon-file-1.0-alpha-5.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-5/wagon-provider-api-1.0-alpha-5-sources.jar" kind="var" path="M2_REPO/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-5/wagon-provider-api-1.0-alpha-5.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-project/2.0/maven-project-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-project/2.0/maven-project-2.0.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/reporting/maven-reporting-api/2.0/maven-reporting-api-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/reporting/maven-reporting-api/2.0/maven-reporting-api-2.0.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-core/2.0/maven-core-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-core/2.0/maven-core-2.0.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.jar"/>
-	<classpathentry kind="var" path="M2_REPO/doxia/doxia-sink-api/1.0-alpha-4/doxia-sink-api-1.0-alpha-4.jar"/>
-	<classpathentry sourcepath="M2_REPO/org/apache/maven/maven-plugin-registry/2.0/maven-plugin-registry-2.0-sources.jar" kind="var" path="M2_REPO/org/apache/maven/maven-plugin-registry/2.0/maven-plugin-registry-2.0.jar"/>
-	<classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="src" path="src/main/java"/>
+  <classpathentry output="target/test-classes" kind="src" path="src/test/java"/>
+  <classpathentry output="src/test/projects/simple/target" kind="src" path="src/test/projects/simple/src/main/java"/>
+  <classpathentry output="src/test/projects/simple/target" kind="src" path="src/test/projects/simple/src/test/java"/>
+  <classpathentry output="src/test/projects/ascii-annotated/target" kind="src" path="src/test/projects/ascii-annotated/src/main/java"/>
+  <classpathentry output="src/test/projects/ascii-annotated/target" kind="src" path="src/test/projects/ascii-annotated/src/test/java"/>
+  <classpathentry output="src/test/projects/no-test/target" kind="src" path="src/test/projects/no-test/src/main/java"/>
+  <classpathentry output="src/test/projects/no-source/target" kind="src" path="src/test/projects/no-source/src/test/java"/>
+  <classpathentry output="src/test/projects/skip-test/target" kind="src" path="src/test/projects/skip-test/src/main/java"/>
+  <classpathentry output="src/test/projects/skip-test/target" kind="src" path="src/test/projects/skip-test/src/test/java"/>
+  <classpathentry output="src/test/projects/properties/target" kind="src" path="src/test/projects/properties/src/main/java"/>
+  <classpathentry output="src/test/projects/properties/target" kind="src" path="src/test/projects/properties/src/test/java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-plugin-descriptor/2.0.4/maven-plugin-descriptor-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-plugin-descriptor/2.0.4/maven-plugin-descriptor-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/ant/ant/1.6.5/ant-1.6.5.jar" sourcepath="M2_REPO/ant/ant/1.6.5/ant-1.6.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jcraft/jsch/0.1.24/jsch-0.1.24.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar" sourcepath="M2_REPO/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-error-diagnostics/2.0.4/maven-error-diagnostics-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-error-diagnostics/2.0.4/maven-error-diagnostics-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/classworlds/classworlds/1.1/classworlds-1.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/wagon/wagon-ssh/1.0-alpha-7/wagon-ssh-1.0-alpha-7.jar" sourcepath="M2_REPO/org/apache/maven/wagon/wagon-ssh/1.0-alpha-7/wagon-ssh-1.0-alpha-7-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/3.8.2/junit-3.8.2.jar" sourcepath="M2_REPO/junit/junit/3.8.2/junit-3.8.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-monitor/2.0.4/maven-monitor-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-monitor/2.0.4/maven-monitor-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-repository-metadata/2.0.4/maven-repository-metadata-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-repository-metadata/2.0.4/maven-repository-metadata-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-plugin-parameter-documenter/2.0.4/maven-plugin-parameter-documenter-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-plugin-parameter-documenter/2.0.4/maven-plugin-parameter-documenter-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-cli/commons-cli/1.0/commons-cli-1.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-model/2.0.4/maven-model-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-model/2.0.4/maven-model-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-embedder/2.0.4/maven-embedder-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-embedder/2.0.4/maven-embedder-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-artifact/2.0.4/maven-artifact-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-artifact/2.0.4/maven-artifact-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-settings/2.0.4/maven-settings-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-settings/2.0.4/maven-settings-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.jar" sourcepath="M2_REPO/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/wagon/wagon-file/1.0-alpha-7/wagon-file-1.0-alpha-7.jar" sourcepath="M2_REPO/org/apache/maven/wagon/wagon-file/1.0-alpha-7/wagon-file-1.0-alpha-7-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.jar" sourcepath="M2_REPO/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar" sourcepath="M2_REPO/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-plugin-api/2.0.4/maven-plugin-api-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-plugin-api/2.0.4/maven-plugin-api-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-profile/2.0.4/maven-profile-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-profile/2.0.4/maven-profile-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-plugin-registry/2.0.4/maven-plugin-registry-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-plugin-registry/2.0.4/maven-plugin-registry-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-core/2.0.4/maven-core-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-core/2.0.4/maven-core-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/backport175/backport175/1.0/backport175-1.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/wagon/wagon-ssh-external/1.0-alpha-6/wagon-ssh-external-1.0-alpha-6.jar" sourcepath="M2_REPO/org/apache/maven/wagon/wagon-ssh-external/1.0-alpha-6/wagon-ssh-external-1.0-alpha-6-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar" sourcepath="M2_REPO/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/maven/wagon/wagon-http-lightweight/1.0-alpha-6/wagon-http-lightweight-1.0-alpha-6.jar" sourcepath="M2_REPO/org/apache/maven/wagon/wagon-http-lightweight/1.0-alpha-6/wagon-http-lightweight-1.0-alpha-6-sources.jar"/>
 </classpath>
