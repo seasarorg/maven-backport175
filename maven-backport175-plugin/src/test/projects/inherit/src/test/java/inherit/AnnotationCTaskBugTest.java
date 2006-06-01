@@ -13,7 +13,7 @@
  * either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-package simple;
+package inherit;
 
 import java.lang.reflect.Method;
 
@@ -34,7 +34,7 @@ public class AnnotationCTaskBugTest extends TestCase {
      */
     // TODO backport175の修正待ち
     // https://www.seasar.org/issues/browse/MAVENBACKPORT-2
-    public void pending_testGetMethod() throws Exception {
+    public void testGetMethod() throws Exception {
         final Method ifsMethod = Foo.class.getMethod("baaaar", null);
         final Method abstractClassMethod = FooImpl.class.getMethod("baaaar",
             null);
@@ -46,10 +46,6 @@ public class AnnotationCTaskBugTest extends TestCase {
     }
 
     public static abstract class FooImpl implements Foo {
-    }
-
-    public void testTodo() throws Exception {
-        System.out.println("TODO: backport175の修正待ち。https://www.seasar.org/issues/browse/MAVENBACKPORT-2");
     }
 
 }
