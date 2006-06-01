@@ -17,7 +17,6 @@ package org.seasar.maven.plugin.backport175;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.util.Arrays;
 import java.util.Properties;
 
@@ -43,7 +42,7 @@ import org.codehaus.plexus.util.dag.CycleDetectedException;
  */
 public class AnnotationCompilerTest extends TestCase {
 
-    private MavenEmbedder maven;
+    protected MavenEmbedder maven;
 
     protected void setUp() throws Exception {
         super.setUp();
@@ -59,33 +58,44 @@ public class AnnotationCompilerTest extends TestCase {
     }
 
     public void testSimple() throws Exception {
-        __testProject("simple");
+        runProjectTest("simple");
     }
 
     public void testNoTest() throws Exception {
-        __testProject("no-test");
+        runProjectTest("no-test");
     }
 
     public void testNoSource() throws Exception {
-        __testProject("no-source");
+        runProjectTest("no-source");
     }
 
     public void testSkipTest() throws Exception {
-        __testProject("skip-test");
+        runProjectTest("skip-test");
     }
 
     public void testAsciiAnnotated() throws Exception {
-        __testProject("ascii-annotated");
+        runProjectTest("ascii-annotated");
     }
 
     public void testProperties() throws Exception {
-        __testProject("properties");
+        runProjectTest("properties");
     }
 
-    private void __testProject(final String projectName) throws IOException,
+    // TODO
+    public void pending_testInherit() throws Exception {
+        runProjectTest("inherit");
+    }
+
+    // TODO
+    public void pending_testJapaneseAnnotated() throws Exception {
+        runProjectTest("japanese-annotated");
+    }
+
+    protected void runProjectTest(final String projectName) throws IOException,
         ProjectBuildingException, ArtifactResolutionException,
         ArtifactNotFoundException, CycleDetectedException,
-        LifecycleExecutionException, BuildFailureException, DuplicateProjectException {
+        LifecycleExecutionException, BuildFailureException,
+        DuplicateProjectException {
 
         // ## Arrange ##
         // ## Act ##
@@ -96,9 +106,11 @@ public class AnnotationCompilerTest extends TestCase {
         EventMonitor eventMonitor = new DefaultEventMonitor(
             new PlexusLoggerAdapter(new MavenEmbedderConsoleLogger()));
 
+        final File executionRootDirectory = pom.getParentFile();
+        System.out.println("executionRootDirectory=" + executionRootDirectory);
         maven.execute(mavenProject, Arrays.asList(new String[] { "clean",
             "package" }), eventMonitor, new ConsoleDownloadMonitor(),
-            new Properties(), pom.getParentFile());
+            new Properties(), executionRootDirectory);
 
         // ## Assert ##
         File jarFile = getTestProjectFile(projectName + "/target/"
@@ -111,33 +123,6 @@ public class AnnotationCompilerTest extends TestCase {
     private File getTestProjectFile(String projectName) throws IOException {
         final File base = new File(".").getCanonicalFile();
         return new File(base, "src/test/projects/" + projectName);
-    }
-
-    public void testLearningFile() throws Exception {
-        final File file = new File(".");
-        assertEquals(false, file.isAbsolute());
-        assertEquals(".", file.getName());
-
-        final File canonicalFile = file.getCanonicalFile();
-        assertEquals(true, canonicalFile.isAbsolute());
-        assertEquals(true, canonicalFile.isDirectory());
-        assertEquals("maven-backport175-plugin", canonicalFile.getName());
-    }
-
-    public void testLearningResource() throws Exception {
-        final URL url = Thread.currentThread().getContextClassLoader()
-            .getResource(".");
-        final String file = url.getFile();
-        final String path = url.getPath();
-        assertEquals(file, path);
-        if (file.endsWith("/maven-backport175-plugin/target/test-classes/")) {
-            // OK
-        } else if (file
-            .endsWith("/maven-backport175-plugin/target/clover/test-classes/")) {
-            // OK (executed by "maven-clover-plugin")
-        } else {
-            fail(file);
-        }
     }
 
 }

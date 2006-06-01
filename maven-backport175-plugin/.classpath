@@ -1,17 +1,20 @@
 <classpath>
   <classpathentry kind="src" path="src/main/java"/>
   <classpathentry output="target/test-classes" kind="src" path="src/test/java"/>
-  <classpathentry output="src/test/projects/simple/target" kind="src" path="src/test/projects/simple/src/main/java"/>
-  <classpathentry output="src/test/projects/simple/target" kind="src" path="src/test/projects/simple/src/test/java"/>
-  <classpathentry output="src/test/projects/ascii-annotated/target" kind="src" path="src/test/projects/ascii-annotated/src/main/java"/>
-  <classpathentry output="src/test/projects/ascii-annotated/target" kind="src" path="src/test/projects/ascii-annotated/src/test/java"/>
-  <classpathentry output="src/test/projects/no-test/target" kind="src" path="src/test/projects/no-test/src/main/java"/>
-  <classpathentry output="src/test/projects/no-source/target" kind="src" path="src/test/projects/no-source/src/test/java"/>
-  <classpathentry output="src/test/projects/skip-test/target" kind="src" path="src/test/projects/skip-test/src/main/java"/>
-  <classpathentry output="src/test/projects/skip-test/target" kind="src" path="src/test/projects/skip-test/src/test/java"/>
-  <classpathentry output="src/test/projects/properties/target" kind="src" path="src/test/projects/properties/src/main/java"/>
-  <classpathentry output="src/test/projects/properties/target" kind="src" path="src/test/projects/properties/src/test/java"/>
-  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry output="src/test/projects/simple/target/classes" kind="src" path="src/test/projects/simple/src/main/java"/>
+  <classpathentry output="src/test/projects/simple/target/test-classes" kind="src" path="src/test/projects/simple/src/test/java"/>
+  <classpathentry output="src/test/projects/ascii-annotated/target/classes" kind="src" path="src/test/projects/ascii-annotated/src/main/java"/>
+  <classpathentry output="src/test/projects/ascii-annotated/target/test-classes" kind="src" path="src/test/projects/ascii-annotated/src/test/java"/>
+  <classpathentry output="src/test/projects/japanese-annotated/target/classes" kind="src" path="src/test/projects/japanese-annotated/src/main/java"/>
+  <classpathentry output="src/test/projects/japanese-annotated/target/test-classes" kind="src" path="src/test/projects/japanese-annotated/src/test/java"/>
+  <classpathentry output="src/test/projects/no-test/target/classes" kind="src" path="src/test/projects/no-test/src/main/java"/>
+  <classpathentry output="src/test/projects/no-source/target/test-classes" kind="src" path="src/test/projects/no-source/src/test/java"/>
+  <classpathentry output="src/test/projects/skip-test/target/classes" kind="src" path="src/test/projects/skip-test/src/main/java"/>
+  <classpathentry output="src/test/projects/skip-test/target/test-classes" kind="src" path="src/test/projects/skip-test/src/test/java"/>
+  <classpathentry output="src/test/projects/properties/target/classes" kind="src" path="src/test/projects/properties/src/main/java"/>
+  <classpathentry output="src/test/projects/properties/target/test-classes" kind="src" path="src/test/projects/properties/src/test/java"/>
+  <classpathentry output="src/test/projects/inherit/target/classes" kind="src" path="src/test/projects/inherit/src/main/java"/>
+  <classpathentry output="src/test/projects/inherit/target/test-classes" kind="src" path="src/test/projects/inherit/src/test/java"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/maven/maven-plugin-descriptor/2.0.4/maven-plugin-descriptor-2.0.4.jar" sourcepath="M2_REPO/org/apache/maven/maven-plugin-descriptor/2.0.4/maven-plugin-descriptor-2.0.4-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/ant/ant/1.6.5/ant-1.6.5.jar" sourcepath="M2_REPO/ant/ant/1.6.5/ant-1.6.5-sources.jar"/>
