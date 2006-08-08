@@ -18,6 +18,11 @@
 -->
 
 <project name="Maven Backport175 Plugin">
+  <skin>
+    <groupId>org.seasar</groupId>
+    <artifactId>seasar-skin</artifactId>
+    <version>1.0.0</version>
+  </skin>
   <!--
   <bannerLeft>
     <name>Maven Backport175 Plugin</name>

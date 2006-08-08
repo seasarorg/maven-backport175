@@ -1,0 +1,76 @@
+ ----
+Usage
+ ----
+HONMA Hirotaka
+ -----
+20 December 2005
+ -----
+
+使用方法
+
+  <<<pom.xml>>>を次のように設定してください。
+
+  Maven2からコンパイルした際に、backport175アノテーションも
+  自動的にコンパイルされるようになります。
+
+------
+<project>
+  ...
+  <build>
+    ...
+    <plugins>
+      ...
+      <plugin>
+        <groupId>org.seasar.maven.plugin.backport175</groupId>
+        <artifactId>maven-backport175-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>annotationc</goal>
+              <goal>testAnnotationc</goal>
+            </goals>
+            <configuration>
+              <!--
+              <verbose>true</verbose>
+              -->
+              <!--
+              <ignoreUnknown>true</ignoreUnknown>
+              -->
+              <!--
+              <properties>
+                <property>${basedir}/src/main/config/aaa.properties</property>
+                <property>${basedir}/src/main/config/bbb.properties</property>
+              </properties>
+              -->
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      ...
+    </plugins>
+    ...
+  </build>
+  ...
+  <pluginRepositories>
+    ...
+    <pluginRepository>
+      <id>maven.seasar.org</id>
+      <name>The Seasar Foundation Maven2 Repository</name>
+      <url>http://maven.seasar.org/maven2</url>
+    </pluginRepository>
+    ...
+  </pluginRepositories>
+  ...
+  <dependencies>
+    ...
+    <dependency>
+      <groupId>backport175</groupId>
+      <artifactId>backport175</artifactId>
+      <version>1.0</version>
+      <type>jar</type>
+    </dependency>
+    ...
+  </dependencies>
+  ...
+</project>
+------
