@@ -168,7 +168,7 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;31</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;<span class="keyword">public</span> <span class="keyword">class</span> AnnotationCWrapper {</pre></td>
 </tr>
 <tr>
@@ -193,32 +193,32 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;36</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        Project project = <span class="keyword">new</span> Project();</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;37</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        project.setName(<span class="string">"maven-backport175"</span>);</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;38</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        ComponentHelper componentHelper = ComponentHelper</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;39</td>
-  <td class="nbHitsCovered">&nbsp;13</td>
+  <td class="nbHitsCovered">&nbsp;17</td>
   <td class="src"><pre class="src">&nbsp;            .getComponentHelper(project);</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;40</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        componentHelper.initDefaultDefinitions();</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;41</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> project;</pre></td>
 </tr>
 <tr>
@@ -238,7 +238,7 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;45</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        AnnotationCTask task = <span class="keyword">new</span> AnnotationCTask();</pre></td>
 </tr>
 <tr>
@@ -248,17 +248,17 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;47</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        task.setProject(createProject());</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;48</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        task.setVerbose(parameter.isVerbose());</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;49</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        task.setIgnoreUnknown(parameter.isIgnoreUnknown());</pre></td>
 </tr>
 <tr>
@@ -268,7 +268,7 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;51</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        File destdir = parameter.getDestdir();</pre></td>
 </tr>
 <tr>
@@ -278,37 +278,37 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;53</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        Path classpath = task.createClasspath();</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;54</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        classpath.setPath(destdir.getCanonicalPath());</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;55</td>
-  <td class="nbHitsCovered">&nbsp;163</td>
+  <td class="nbHitsCovered">&nbsp;224</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">for</span> (Iterator it = parameter.getClasspath().iterator(); it.hasNext();) {</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;56</td>
-  <td class="nbHitsCovered">&nbsp;237</td>
+  <td class="nbHitsCovered">&nbsp;340</td>
   <td class="src"><pre class="src">&nbsp;            String path = (String) it.next();</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;57</td>
-  <td class="nbHitsCovered">&nbsp;237</td>
+  <td class="nbHitsCovered">&nbsp;340</td>
   <td class="src"><pre class="src">&nbsp;            <span class="keyword">if</span> (!<span class="keyword">new</span> File(path).exists()) {</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;58</td>
-  <td class="nbHitsCovered">&nbsp;24</td>
+  <td class="nbHitsCovered">&nbsp;48</td>
   <td class="src"><pre class="src">&nbsp;                getLog().info(<span class="string">"classpath does not exist: "</span> + path);</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;59</td>
-  <td class="nbHitsCovered">&nbsp;24</td>
+  <td class="nbHitsCovered">&nbsp;48</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">continue</span>;</pre></td>
 </tr>
 <tr>
@@ -318,7 +318,7 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;61</td>
-  <td class="nbHitsCovered">&nbsp;213</td>
+  <td class="nbHitsCovered">&nbsp;292</td>
   <td class="src"><pre class="src">&nbsp;            classpath.setPath(path);</pre></td>
 </tr>
 <tr>
@@ -333,32 +333,32 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;64</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        Path sourcepath = task.createSourcepath();</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;65</td>
-  <td class="nbHitsCovered">&nbsp;149</td>
+  <td class="nbHitsCovered">&nbsp;204</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">for</span> (Iterator it = parameter.getSourcepath().iterator(); it.hasNext();) {</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;66</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;            String path = (String) it.next();</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;67</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;            <span class="keyword">if</span> (!<span class="keyword">new</span> File(path).exists()) {</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;68</td>
-  <td class="nbHitsCovered">&nbsp;26</td>
+  <td class="nbHitsCovered">&nbsp;38</td>
   <td class="src"><pre class="src">&nbsp;                getLog().info(<span class="string">"source directory does not exist: "</span> + path);</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;69</td>
-  <td class="nbHitsCovered">&nbsp;26</td>
+  <td class="nbHitsCovered">&nbsp;38</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span>;</pre></td>
 </tr>
 <tr>
@@ -368,7 +368,7 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;71</td>
-  <td class="nbHitsCovered">&nbsp;99</td>
+  <td class="nbHitsCovered">&nbsp;136</td>
   <td class="src"><pre class="src">&nbsp;            sourcepath.setPath(path);</pre></td>
 </tr>
 <tr>
@@ -383,12 +383,12 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;74</td>
-  <td class="nbHitsCovered">&nbsp;99</td>
+  <td class="nbHitsCovered">&nbsp;136</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">if</span> (!destdir.exists()) {</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;75</td>
-  <td class="nbHitsCovered">&nbsp;17</td>
+  <td class="nbHitsCovered">&nbsp;23</td>
   <td class="src"><pre class="src">&nbsp;            <span class="keyword">if</span> (!destdir.mkdirs()) {</pre></td>
 </tr>
 <tr>
@@ -413,7 +413,7 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;80</td>
-  <td class="nbHitsCovered">&nbsp;99</td>
+  <td class="nbHitsCovered">&nbsp;136</td>
   <td class="src"><pre class="src">&nbsp;        task.setDestdir(destdir);</pre></td>
 </tr>
 <tr>
@@ -423,22 +423,22 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;82</td>
-  <td class="nbHitsCovered">&nbsp;99</td>
+  <td class="nbHitsCovered">&nbsp;136</td>
   <td class="src"><pre class="src">&nbsp;        Path properties = task.createProperties();</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;83</td>
-  <td class="nbHitsCovered">&nbsp;110</td>
+  <td class="nbHitsCovered">&nbsp;149</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">for</span> (Iterator it = parameter.getProperties().iterator(); it.hasNext();) {</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;84</td>
-  <td class="nbHitsCovered">&nbsp;36</td>
+  <td class="nbHitsCovered">&nbsp;56</td>
   <td class="src"><pre class="src">&nbsp;            String property = (String) it.next();</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;85</td>
-  <td class="nbHitsCovered">&nbsp;36</td>
+  <td class="nbHitsCovered">&nbsp;56</td>
   <td class="src"><pre class="src">&nbsp;            properties.setPath(property);</pre></td>
 </tr>
 <tr>
@@ -453,12 +453,12 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;88</td>
-  <td class="nbHitsCovered">&nbsp;99</td>
+  <td class="nbHitsCovered">&nbsp;136</td>
   <td class="src"><pre class="src">&nbsp;        task.execute();</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;89</td>
-  <td class="nbHitsCovered">&nbsp;99</td>
+  <td class="nbHitsCovered">&nbsp;136</td>
   <td class="src"><pre class="src">&nbsp;    }</pre></td>
 </tr>
 <tr>
@@ -473,7 +473,7 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;92</td>
-  <td class="nbHitsCovered">&nbsp;50</td>
+  <td class="nbHitsCovered">&nbsp;86</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> log;</pre></td>
 </tr>
 <tr>
@@ -493,12 +493,12 @@
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;96</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">this</span>.log = log;</pre></td>
 </tr>
 <tr>
   <td class="numLineCover">&nbsp;97</td>
-  <td class="nbHitsCovered">&nbsp;125</td>
+  <td class="nbHitsCovered">&nbsp;174</td>
   <td class="src"><pre class="src">&nbsp;    }</pre></td>
 </tr>
 <tr>
