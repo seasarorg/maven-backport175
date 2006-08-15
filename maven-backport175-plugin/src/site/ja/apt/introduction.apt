@@ -6,7 +6,7 @@ HONMA Hirotaka
 20 December 2005
  -----
 
-イントロダクション
+概要
 
   このMaven2プラグインを使用すると、{{{http://backport175.codehaus.org/}backport175}}
   アノテーションをビルドすることができます。
