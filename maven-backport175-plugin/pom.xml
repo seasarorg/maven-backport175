@@ -5,7 +5,7 @@
   <artifactId>maven-backport175-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <name>Maven Backport175 Plugin</name>
-  <version>0.3.4-SNAPSHOT</version>
+  <version>0.3.4</version>
   <description>backport175 annotations compiler</description>
   <url>http://maven-backport175.sandbox.seasar.org/</url>
   <inceptionYear>2005</inceptionYear>
@@ -127,6 +127,7 @@
     </plugins>
   </build>
   <pluginRepositories>
+    <!--
     <pluginRepository>
       <id>Maven Snapshots</id>
       <url>http://snapshots.maven.codehaus.org/maven2/</url>
@@ -137,6 +138,7 @@
         <enabled>false</enabled>
       </releases>
     </pluginRepository>
+    -->
   </pluginRepositories>
   <dependencies>
     <dependency>
@@ -183,13 +185,6 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>cobertura-maven-plugin</artifactId>
-        <version>2.0-SNAPSHOT</version>
-        <!--
-        <version>2.0-20060130.214008-3</version>
-        <configuration>
-          <outputDirectory>${project.build.directory}/site/cobertura</outputDirectory>
-        </configuration>
-        -->
       </plugin>
       <!--
       <plugin>
